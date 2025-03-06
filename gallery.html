@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gallery{
+            width: 80%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: auto auto auto  auto;
+            grid-gap: 2vh;
+            grid-auto-flow: dense;
+        }
+        .gallery .image{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .gallery .image img{
+            height: 100%;
+            width: 100%;
+            object-fit: center;
+            border-radius: 2px;
+            filter: brightness(0.5)grayscale(1);
+            transition: 0.3s ease-in-out;
+        }
+        .gallery .image img:hover{
+            filter: brightness(1)grayscale(0);
+            transform: scale(1.1);
+        }
+        .gallery .image:first-child{
+            grid-column-start: span  2;
+            grid-row-start: span  2;
+        }
+        .gallery .image:nth-child(2n+1){
+            grid-row-start: span  2;
+        }
+
+        .gallery .image:nth-child(4n+6){
+            grid-row-start: span 2;
+            grid-row-start: span 2;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>
+        <div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div><div class="image">
+            <img src="https://www.atlasandboots.com/wp-content/uploads/2019/05/ama-dablam2-most-beautiful-mountains-in-the-world.jpg" alt="">
+
+        </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    </div>
+</body>
+</html>
