@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple House</title>
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000%;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
+
+
+header {
+    height: 300px;
+    padding: 100px ;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    
+    align-items: center;
+   background-image: url("https://templatemo.com/templates/templatemo_539_simple_house/img/simple-house-01.jpg");
+     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+  
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-right: 0; 
+    margin-bottom: 5px; 
+    
+ 
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 1em;
+}
+nav {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+.hero {
+    
+    color: grey;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero .buttons {
+    margin-top: 20px;
+}
+
+.hero .buttons button {
+    border: 2px solid green;
+    background: none;
+    padding: 10px 20px;
+    
+}
+
+.hero .buttons button.active {
+    background: green;
+    color: white;
+}
+
+
+.menu {
+    padding: 50px 0;
+}
+
+.menu .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 20%;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    color: darkblue;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: green;
+}
+
+.info {
+    padding: 50px 0;
+}
+
+.info .container {
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    width: 50%;
+}
+
+.info .text {
+    padding-left: 40px;
+    
+}
+
+.info a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+
+footer {
+    
+    color: grey;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+          
+           
+            <div class="logo">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/simple-house-logo.png" alt="Logo Icon">
+               
+               <div> <h1>Simple House</h1>
+                <p>new restaurant template</p>
+              </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Simple House</h2>
+            <p>Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites.</p>
+            <div class="buttons">
+                <button class="active">Pizza</button>
+                <button class ="act">Salad</button>
+                <button>Noodle</button>
+            </div>
+        </div>
+    </section>
+
+ 
+    <section class="menu">
+        <div class="container">
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/01.jpg" alt="Страва 1">
+                <h3>Fusce dictum finibus</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$45 / $55</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/02.jpg" alt="Страва 2">
+                <h3>Aliquam sagittis</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$65 / $70</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/03.jpg" alt="Страва 3">
+                <h3>Sed varius turpis</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$30.50</span>
+            </div>
+          <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/04.jpg" alt="Страва 4">
+                <h3>Aliquam sagittis</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$25.50</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/05.jpg" alt="Aliquam sagittis">
+                <h3>Maecenas eget justo</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$80.25</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/06.jpg" alt="Aliquam sagittis">
+                <h3>Quisque et felis eros</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$20 / $40 / $60</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/07.jpg" alt="Aliquam sagittis">
+              <h3>Sed ultricies dui</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$ 94</span>
+            </div>
+            <div class="menu-item">
+                <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/gallery/08.jpg" alt="Aliquam sagittis">
+                <h3>Donec porta consequat</h3>
+                <p>Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan</p>
+                <span>$ 15</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <img src="https://templatemo.com/templates/templatemo_539_simple_house/img/img-01.jpg" alt="Авокадо">
+            <div class="text">
+                <h3>Maecenas nulla neque</h3>
+                <p>Redistributing this template as a downloadable ZIP file on 
+                    any template collection site is strictly prohibited. You will need to 
+                    talk to us   
+                    for additional permissions about our templates. Thank you.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>Copyright © 2020 Simple House | Design: TemplateMo</p>
+        </div>
+    </footer>
+</body>
+</html>
