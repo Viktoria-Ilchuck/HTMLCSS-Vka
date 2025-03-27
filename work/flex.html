@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+ <style>  
+   @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+body{
+    margin: 0;
+    background-color: #f0f0f0;
+    font-weight: 500;
+    font-family: Montserrat, Arial, sans-serif;
+ 
+}
+ 
+header{
+    height: 500px;
+    background: url("https://t3.ftcdn.net/jpg/09/47/41/92/360_F_947419221_5zTBECQYeyv5y7RcwC9dko5pEenrng7g.jpg") no-repeat center #0f1384;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+ 
+@keyframes moveLeft{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+ 
+@keyframes moveRight{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+ 
+ 
+h1{
+    font-size: 3em;
+    animation: moveLeft .5s ease-out .3s backwards;
+}
+ 
+ 
+h2{
+    font-size: 2em;
+    animation: moveRight .5s ease-out .3s backwards;
+}
+ 
+ 
+ 
+ 
+ 
+.main-nav{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.38);
+    min-height: 65px;
+}
+ 
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+ 
+nav ul li{
+    margin-left: 35px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+ 
+nav ul a {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: .5s;
+}
+ 
+nav ul a:hover{
+    color: #989898;
+    border-bottom-color: #989898;
+}
+.tab{
+    flex: 1 0 20%;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    transition: flex-basis 500ms ease-in-out;
+}
+ 
+ 
+.tab:hover{
+    flex-basis: 35%;
+    overflow: visible;
+}
+ 
+.name{
+    font-size: 1.3em;
+}
+ 
+.speciality{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+ 
+ 
+.tab-info{
+    text-align: center;
+}
+ 
+ 
+.tab-details{
+    opacity: 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.57);
+    list-style-type: none;
+    line-height: 2;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transition: .5s;
+}
+ 
+ 
+.tab:hover .tab-info{
+    margin-left: 20%;
+}
+.tab:hover .tab-details{
+    left: 0;
+}
+ 
+ 
+.tab:hover .tab-details{
+    opacity: 1;
+}
+  </style>
+</head>
+<body>
+   
+<div class ="main-nav">
+ 
+    <div class = "container">
+ 
+        <nav>
+ 
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#teams">Teams</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+ 
+ 
+        </nav>
+   
+    </div>
+ 
+</div>
+   
+<header id = "header">
+        <h1>Interior Design Studio</h1>
+        <h2>We create things you like</h2>
+</header>
+ 
+
+
+</body>
+</html>

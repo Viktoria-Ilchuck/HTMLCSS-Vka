@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. Миготливий текст */
+.blinking-text {
+    animation: blink 2s infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.2; }
+}
+
+/* 2. Підстрибуючий м'яч */
+.bouncing-ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    60% { transform: translateY(-75px); }
+    70% { transform: translateY(-90px); }
+    80% { transform: translateY(-80px); }
+}
+
+/* 3. Біжучий текст */
+.running-text-container {
+    width: 300px;
+    overflow: hidden;
+}
+
+.running-text {
+    white-space: nowrap;
+    animation: run 5s linear infinite;
+}
+
+@keyframes run {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+
+  
+    </style>
+</head>
+<body>
+    <h1 class="blinking-text">Миготливий текст</h1>
+    <div class="bouncing-ball"></div>
+    <div class="running-text-container">
+        <p class="running-text">Hello, world!</p>
+    </div>
+</body>
+</html>
