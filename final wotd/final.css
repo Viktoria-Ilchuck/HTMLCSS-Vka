@@ -1,0 +1,192 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #222;
+}
+
+nav .navbar-brand {
+    font-size: 1.5rem;
+}
+
+nav .nav-link {
+    color: #fff;
+    margin-left: 15px;
+}
+
+.hero img {
+    height: 1000px;
+    object-fit: cover;
+    background-color: black;
+}
+
+.running-text-container {
+    width: 100vw;
+    /* Вся ширина екрану */
+    background-color: darkred;
+    /* Темно-червоний фон */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+}
+
+.running-text {
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 200%;
+    /* Робимо ширину в 2 рази більшою за екран */
+    animation: run 10s linear infinite;
+}
+
+.running-text span {
+    display: inline-block;
+    width: 100%;
+    /* Кожен текст займає 100% від ширини */
+}
+
+@keyframes run {
+    from {
+        transform: translateX(0);
+    }
+
+    /* Починає з початкової позиції */
+    to {
+        transform: translateX(-50%);
+    }
+
+    /* Рухається вліво на пів ширини блоку */
+}
+
+.bio {
+    background: url('https://static7.depositphotos.com/1006137/690/i/450/depositphotos_6908971-stock-photo-red-background.jpg');
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 2.5rem;
+    color: #faf9f7;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column-2 {
+    flex: 1;
+    min-width: 300px;
+    color: #faf9f7;
+    margin: 2.5rem;
+
+}
+
+.column-img {
+    /* ☆ */
+
+    position: absolute;
+    width: 396px;
+    height: 634px;
+    left: 1239px;
+    top: 1244px;
+
+    background: url(☆.jpg);
+
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #dbdbdb;
+}
+
+
+.schedule {
+    background: linear-gradient(to bottom, #3a0d0d, #7a1c1c);
+    padding: 30px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.schedule h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.schedule-item span:first-child {
+    color: #e63946;
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.schedule-item span:nth-child(2) {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.schedule-item span:nth-child(3) {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+.schedule-item button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.music {
+    background: url('https://i.ibb.co/tpCSRLfX/photo-5435944926509657213-w.jpg');
+    padding: 30px;
+}
+
+.music h2 {
+    color: #fff;
+}
+
+footer {
+    background-color: #222;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Медіазапити для адаптивності */
+@media (max-width: 768px) {
+    .hero img {
+        max-height: 300px;
+    }
+}

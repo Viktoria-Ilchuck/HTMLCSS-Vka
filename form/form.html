@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ввідні елементи</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <!-- Inputs -->
+        <div>
+            <label>Inputs</label><br />
+            <input type="text" class="input-default" placeholder="Enter some text" />
+            <input type="text" class="input-valid" value="valid text" />
+            <input type="text" class="input-invalid" value="invalid text" />
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="checkboxes">
+            <label>Check boxes</label><br />
+            <label class="checkbox-label">
+                <input type="checkbox" checked />
+                <span class="checkbox-green">Subscribe</span>
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" checked />
+                <span class="checkbox-red">Subscribe</span>
+            </label>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="radios">
+            <label>Radio buttons</label><br />
+            Gender:
+            <label class="radio-label">
+                <input type="radio" name="gender" checked />
+                <span>Male</span>
+            </label>
+            <label class="radio-label">
+                <input type="radio" name="gender" />
+                <span>Female</span>
+            </label>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <label>Buttons</label><br />
+            <button class="btn btn-green">Active</button>
+            <button class="btn btn-green hover">Hover</button>
+            <button class="btn btn-red">Danger</button>
+            <button class="btn btn-red hover">Hover</button>
+            <button class="btn btn-disabled" disabled>Disabled</button>
+            <button class="btn btn-green btn-round">+</button>
+            <button class="btn btn-red btn-round">–</button>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label>Text area</label><br />
+            <textarea class="textarea" placeholder="Enter some text..."></textarea>
+        </div>
+    </div>
+</body>
+
+</html>
