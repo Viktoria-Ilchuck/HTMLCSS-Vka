@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9f9;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    margin: 8px 5px 16px 0;
+}
+
+
+.input-default {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+}
+
+.input-valid {
+    border: 2px solid green;
+    padding: 6px 10px;
+    background-color: #e6f4ea;
+    border-radius: 4px;
+}
+
+.input-invalid {
+    border: 2px solid red;
+    padding: 6px 10px;
+    background-color: #fceaea;
+    border-radius: 4px;
+}
+
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 6px;
+}
+
+.checkbox-green {
+    background-color: green;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.checkbox-red {
+    background-color: red;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.radio-label {
+    margin-right: 15px;
+}
+
+.radio-label input {
+    margin-right: 5px;
+}
+
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin: 5px 5px 15px 0;
+    transition: background-color 0.3s;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+.btn-green.hover,
+.btn-green:hover {
+    background-color: #2e8b57;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-red.hover,
+.btn-red:hover {
+    background-color: #b22222;
+}
+
+.btn-disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+
+.btn-round {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    padding: 0;
+    text-align: center;
+    line-height: 32px;
+}
+
+
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
